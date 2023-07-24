@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #2c2c3c;
+    justify-content: left;
+    height: 50px;
+}
+
+.ey-logo {
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+.login-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+    border-radius: 20px;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+
+  .login{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+  
+  
+  .form-field {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+.required-message {
+  text-align: center;
+  color: red;
+  margin-top: 30px;
+}
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-button {
+    padding: 5px 20px;
+    background-color: #f7e111;
+    color: #2c2c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 40px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  .footer {
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    font-weight: bold;
+    color: white;
+  }
