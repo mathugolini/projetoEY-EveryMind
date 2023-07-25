@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: #2c2c3c;
+    justify-content: left;
+    height: 50px;
+  }
+
+  .ey-logo {
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .inline-fields {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+.cadastro{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .cadastro-form{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+    border-radius: 20px;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+
+  .form-field {
+    margin-bottom: 10px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 5px 20px;
+    background-color: #f7e111;
+    color: #2c2c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .footer {
+    margin-top: 30px;
+    background-color: #34495e;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-text {
+    font-weight: bold;
+    color: white;
+  }
+
+  .required {
+    color: red;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 4px;
+    font-size: 12px;
+  }
