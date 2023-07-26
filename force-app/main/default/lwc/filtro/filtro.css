@@ -12,18 +12,36 @@
     margin-left: 15px;
   }
 
+  .center {
+    justify-content: center;
+    text-align: center;
+  } 
+
   h1 {
     font-weight: bold;
     font-size: 24px;
   }
 
-
-  .login{
+  input {
     margin-top: 40px;
+    width: 700px;
+    border-radius: 10px;
+    height: 20px;
+    padding: 20px;
     margin-bottom: 40px;
-    text-align: center;
-    }
-  
+  }
+
+  .botoes {
+    margin: 20px;
+    padding: 40px;
+  }
+
+  button {
+    margin-right: 20px;
+    display: inline-block;
+  }
+
+
   
   .form-field {
     margin-bottom: 10px;
