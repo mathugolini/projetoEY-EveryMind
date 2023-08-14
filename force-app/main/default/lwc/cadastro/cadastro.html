@@ -116,6 +116,10 @@
           <div class="required-message">Por favor, preencha todos os campos obrigatórios.</div>
         </template>
 
+        <template if:true={showSuccessMessage}>
+          <div class="success-message">Cadastro realizado com sucesso. Você será redirecionado para a tela de login.</div>
+      </template>
+
         <button type="submit" onclick={handleCadastro}>Cadastrar</button>
       </div>
 
