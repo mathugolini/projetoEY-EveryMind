@@ -2,7 +2,7 @@ import { LightningElement, track } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
 
 export default class Cadastro extends NavigationMixin(LightningElement)  {
-  @track showRequiredMessage = false;
+  @track showRequiredMessage = true;
   @track showFullNameRequiredMessage = false;
   @track showEmailRequiredMessage = false;
   @track showBirthdateRequiredMessage = false;
@@ -13,9 +13,7 @@ export default class Cadastro extends NavigationMixin(LightningElement)  {
   @track showDisabilityRequiredMessage = false;
   @track showFamilyIncomeRequiredMessage = false;
 
-  handleCadastro(event) {
-    event.preventDefault();
-    event.stopPropagation();
+  handleCadastro() {
     const fullNameInput = this.template.querySelector('input[name="full-name"]');
     const emailInput = this.template.querySelector('input[name="email"]');
     const birthdateInput = this.template.querySelector('input[name="birthdate"]');
@@ -82,22 +80,19 @@ export default class Cadastro extends NavigationMixin(LightningElement)  {
       this.showRequiredMessage = true;
     }
 
-    if (!this.showRequiredMessage) {
-      // Restante da lógica de cadastro
-    }
 
     if (!this.showRequiredMessage) {
       // Restante da lógica de cadastro
       
-      const pageReference = {
-        type: 'standard__webPage',
-        attributes: {
-            url: 'https://hugolini-portifolio-dev-ed.develop.my.site.com/eyprojeto/ey-login'
-        }
-    };
+      const url = '/eyprojeto/ey-login'; // Substitua pela URL correta
 
-    // Navegue para a nova página de login
-    this[NavigationMixin.Navigate](pageReference);
+      // Navegue para a nova URL
+      this[NavigationMixin.Navigate]({
+          type: 'standard__webPage',
+          attributes: {
+              url: url
+          }
+      });
   }
 }
 }
