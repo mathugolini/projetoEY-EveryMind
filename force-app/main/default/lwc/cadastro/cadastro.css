@@ -113,3 +113,9 @@
     margin-top: 4px;
     font-size: 12px;
   }
+
+  .success-message {
+    color: green;
+    margin-top: 4px;
+    font-size: 12px;
+  }
