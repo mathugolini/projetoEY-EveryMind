@@ -90,7 +90,6 @@ export default class Cadastro extends NavigationMixin(LightningElement)  {
        setTimeout(() => {
         this.showSuccessMessage = false;
       
-      
       const url = '/eyprojeto/ey-login'; // Substitua pela URL correta
 
       // Navegue para a nova URL
@@ -100,7 +99,7 @@ export default class Cadastro extends NavigationMixin(LightningElement)  {
               url: url
           }
       });
-  }, 5000);
+  }, 4000);
 }
 }
 }
