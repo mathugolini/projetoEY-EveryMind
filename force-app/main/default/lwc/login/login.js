@@ -3,6 +3,7 @@ import { NavigationMixin } from 'lightning/navigation';
 
 export default class Login extends NavigationMixin(LightningElement) {
   @track showRequiredMessage = true;
+  @track showSuccessMessage = false;
 
   handleLogin() {
     const emailInput = this.template.querySelector('input[name="email"]');
@@ -12,6 +13,14 @@ export default class Login extends NavigationMixin(LightningElement) {
       this.showRequiredMessage = false;
     } else {
       this.showRequiredMessage = true;
+
+       // Mostra a mensagem de sucesso
+       this.showSuccessMessage = true;
+
+       // Define um timeout para ocultar a mensagem após 5 segundos
+       setTimeout(() => {
+        this.showSuccessMessage = false;
+
                  // Crie a URL da página de filtro-tela
                  const url = '/eyprojeto/filtro-tela'; // Substitua pela URL correta
 
@@ -22,6 +31,7 @@ export default class Login extends NavigationMixin(LightningElement) {
                          url: url
                      }
                  });
-    }
+    }, 2000);
   }
+}
 }
