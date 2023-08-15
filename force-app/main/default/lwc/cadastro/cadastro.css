@@ -114,8 +114,23 @@
     font-size: 12px;
   }
 
-  .success-message {
+  .success-message{
     color: green;
     margin-top: 4px;
     font-size: 12px;
+  }
+
+  .loader {
+    height: 40px;
+    width: 40px;
+    border: 12px solid #e3e3e3;
+    border-radius: 50px;
+    border-right-color: green;
+    animation: spin 1s ease infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg)
+    }
   }
