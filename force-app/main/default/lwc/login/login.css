@@ -78,3 +78,10 @@ input[type="password"] {
     font-weight: bold;
     color: white;
 }
+
+.success-message{
+  text-align: center;
+  color: green;
+  margin-top: 4px;
+  font-size: 12px;
+}
