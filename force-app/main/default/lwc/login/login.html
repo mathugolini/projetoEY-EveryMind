@@ -25,6 +25,10 @@
           <template if:false={showRequiredMessage}>
             <div class="required-message">Por favor, preencha todos os campos de login e senha.</div>
           </template>
+
+          <template if:true={showSuccessMessage}>
+            <div class="success-message">Login validado com sucesso.</div>
+        </template>
         </div>
       </div>
   
