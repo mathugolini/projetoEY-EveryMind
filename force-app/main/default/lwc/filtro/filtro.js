@@ -1,19 +1,24 @@
 import { LightningElement } from 'lwc';
-
-
-
-
-import 	EYassets from '@salesforce/resourceUrl/EYassets'
+import EYassets from '@salesforce/resourceUrl/EYassets';
 
 export default class Filtro extends LightningElement {
+    candidato1 = `${EYassets}/EYassets/matheusLogo.png`;
+    candidato2 = `${EYassets}/EYassets/Cahue.jpg`;
+    candidato3 = `${EYassets}/EYassets/Gabriel.jpg`;
+    candidato4 = `${EYassets}/EYassets/Gustavo.jpg`;
+    searchText = '';
 
-   
-    candidato1 = `${EYassets}/EYassets/matheusLogo.png`
-    candidato2 = `${EYassets}/EYassets/Cahue.jpg`
-    candidato3 = `${EYassets}/EYassets/Gabriel.jpg`
-    candidato4 = `${EYassets}/EYassets/Gustavo.jpg`
+    handleSearchKeyUp(event) {
+        this.searchText = event.target.value.toLowerCase();
+    }
 
+    handleSearchEnter(event) {
+        if (event.key === 'Enter') {
+            this.sendQuestion();
+        }
+    }
+
+    sendQuestion() {
+        console.log('teste');
+    }
 }
-
-
-
