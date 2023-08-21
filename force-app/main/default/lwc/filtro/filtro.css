@@ -79,16 +79,26 @@
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribui os elementos igualmente na linha */
     align-items: flex-start; /* Alinha os elementos no topo da linha */
-    
+  }
+
+  .candidato-container2 {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribui os elementos igualmente na linha */
+    align-items: flex-start; /* Alinha os elementos no topo da linha */
   }
 
   .candidato-1,
   .candidato-2,
   .candidato-3,
-  .candidato-4 {
+  .candidato-4, 
+  .candidato-5,
+  .candidato-6,
+  .candidato-7,
+  .candidato-8 {
     width: calc(50% - 10px); /* Define a largura de cada candidato para ocupar metade da largura da linha, considerando alguma margem */
     margin-bottom: 20px; /* Adicione uma margem inferior para espaçamento entre os candidatos */
     padding: 20px;
+    box-sizing: border-box; /* Garantir que o padding não afete a largura total */
   }
 
 
