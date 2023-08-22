@@ -13,7 +13,7 @@
 .container{
     display: flex;
     justify-content: space-between; /* Isso cria espaço entre os elementos no contêiner */
-    margin-bottom: var(--size-40);
+    margin-bottom: 0px;
     background-color: #2c2c3c;
     height: 50px;
 }
@@ -46,4 +46,57 @@
 .login-button:hover, .signup-button:hover {
     background-color: #f7e111;
     color: #2c2c3c;
+}
+.promoting-inclusion {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    padding: 20px 0;
+    
+}
+
+.promoting-inclusion::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #2c2c3c;
+}
+
+.start-now-button {
+    text-align: center;
+    padding: 0; /* Ajusta o espaçamento do botão */
+    margin-top: 50px;
+}
+
+.start-now-button button {
+    color: #2c2c3c;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #f7e111;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.box-1 {
+    background: #2c2c3c;
+    height: 400px;
+}
+
+.separator {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid #fff;
+    margin-top: -13.9vw;
 }
