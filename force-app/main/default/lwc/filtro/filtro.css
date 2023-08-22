@@ -75,17 +75,15 @@
     font-weight: bold;
     color: white;
   }
-  .candidato-container {
+  .candidato-container, 
+  .candidato-container2,
+  .candidato-container3,
+  .candidato-container4{
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Distribui os elementos igualmente na linha */
     align-items: flex-start; /* Alinha os elementos no topo da linha */
   }
 
-  .candidato-container2 {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Distribui os elementos igualmente na linha */
-    align-items: flex-start; /* Alinha os elementos no topo da linha */
-  }
 
   .candidato-1,
   .candidato-2,
