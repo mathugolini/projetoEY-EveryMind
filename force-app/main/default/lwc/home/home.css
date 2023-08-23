@@ -24,9 +24,6 @@
     gap: 10px;
     margin: 0; /* Remove o espaço padrão nas listas */
     margin-right: 20px;
-}
-
-.login-signup {
     margin-right: 15px;
     display: flex;
     align-items: center;
@@ -49,71 +46,42 @@
     color: #2c2c3c;
 }
 
-.box-1 {
-    background: #2c2c3c;
+.BoxOne {
+    background-color: #3a3a59;
+    background-size: cover;
     height: 600px;
+    margin: auto;
+    padding: 130px;
 }
-
-.diagonal-container {
-    background-color: #2c2c3c; /* Cor de fundo para a área acima da linha diagonal */
-    overflow: hidden; /* Esconde o conteúdo que excede a altura */
-}
-
-h2 {
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 60px;
-    text-shadow: 1px 5px 7px rgb(0 0 0);
-}
-
-.promoting-inclusion {
-    padding: 70px;
-    font-size: 60px;
-    position: relative;
-    
-}
-
-.start-now-button {
-    text-align: center;
-    padding: 0; /* Ajusta o espaçamento do botão */
-    margin-top: 50px;
-}
-
-.start-now-button button {
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    background-color: #f7e111;
-    width: 250px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.5);
-}
-
-.center-button {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
-}
-
-.box-2{
-    background: #fff;
-}
-
 
 .separator {
     width: 0;
     height: 0;
-    border-right: 100vw solid transparent;
-    border-bottom: 13.9vw solid #fff;
-    margin-top: -13.9vw;
+    border-right: 90vw solid transparent;
+    border-bottom: 15.9vw solid red;
+    margin-top: -15.9vw;
 }
 
-.ey-institute {
+.text-h2 {
     font-weight: bold;
     font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 8px 0 10px rgba(0, 0, 0, 0.5);
+} 
+
+.btn-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    background: #f7e111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-
