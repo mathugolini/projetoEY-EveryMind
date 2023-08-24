@@ -47,7 +47,7 @@
 }
 
 .BoxOne {
-    background-color: #3a3a59;
+    background-color: #2a2a33;
     background-size: cover;
     height: 600px;
     margin: auto;
@@ -57,8 +57,8 @@
 .separator {
     width: 0;
     height: 0;
-    border-right: 90vw solid transparent;
-    border-bottom: 15.9vw solid red;
+    border-right: 80vw solid transparent;
+    border-bottom: 15.9vw solid #f7e111;
     margin-top: -15.9vw;
 }
 
@@ -84,4 +84,27 @@
     background: #f7e111;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ey {
+    margin-top: -100px;
+    font-size: 70px;
+    margin-left: 110px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 6px 2px rgb(255 255 255 / 100%);
+}
+
+.modelo {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: 500px;
+    box-shadow: 2px 1px 50px 70px rgba(0, 0, 0, 0.5);
+    border-radius: 90px;
+}
+
+p {
+    font-size: 20px;
+    margin-left: 70px;
 }
