@@ -3,6 +3,10 @@ import { LightningElement } from 'lwc';
 import Everymindassets from '@salesforce/resourceUrl/Everymindassets';
 
 export default class Filtro extends LightningElement {
+
+    everymindlogo = `${Everymindassets}/EYassets/everymind.png`;
+    modelo = `${Everymindassets}/EYassets/modelo.png`;
+
     candidato1 = `${Everymindassets}/EYassets/matheusLogo.png`;
     candidato2 = `${Everymindassets}/EYassets/Cahue.jpg`;
     candidato3 = `${Everymindassets}/EYassets/Gabriel.jpg`;
