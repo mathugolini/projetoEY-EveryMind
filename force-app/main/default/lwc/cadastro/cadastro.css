@@ -5,17 +5,17 @@
 }
 
 .container {
-    display: flex;
-    margin-bottom: var(--size-40);
-    background-color: #2c2c3c;
-    justify-content: left;
-    height: 50px;
+  display: flex;
+  margin-bottom: var(--size-40);
+  background-color: #ebfffb;
+  justify-content: left;
+  height: 90px;
   }
 
-  .ey-logo {
-    height: 30px;
+  .everymind-logo {
+    height: 70px;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 35px;
   }
 
   h1 {
@@ -47,7 +47,7 @@
   }
 
   .cadastro-form{
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding: var(--size-20);
     border-radius: 4px;
     border-radius: var(--size-20);
@@ -55,7 +55,7 @@
     margin: auto;
     margin-top: var(--size-40);
     margin-bottom: var(--size-40);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgb(217 253 255 / 20%);
     text-align: left;
   }
 
@@ -78,7 +78,7 @@
 
   button {
     padding: 5px 20px;
-    background-color: #f7e111;
+    background-color: #ebfffb;
     color: #2c2c3c;
     border: none;
     border-radius: 4px;
@@ -94,14 +94,14 @@
 
   .footer {
     margin-top: 30px;
-    background-color: #34495e;
+    background-color: #ebfffb;
     padding: var(--size-10);
     text-align: center;
   }
   
   .footer-text {
     font-weight: bold;
-    color: white;
+    color: black;
   }
 
   .required {
