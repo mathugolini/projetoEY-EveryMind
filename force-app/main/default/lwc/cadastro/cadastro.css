@@ -55,7 +55,7 @@
     margin: auto;
     margin-top: var(--size-40);
     margin-bottom: var(--size-40);
-    box-shadow: 0 0 20px rgb(217 253 255 / 20%);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
     text-align: left;
   }
 
@@ -78,7 +78,7 @@
 
   button {
     padding: 5px 20px;
-    background-color: #ebfffb;
+    background-color: #499adb;
     color: #2c2c3c;
     border: none;
     border-radius: 4px;
