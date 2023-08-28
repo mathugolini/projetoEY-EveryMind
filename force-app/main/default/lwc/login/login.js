@@ -1,7 +1,12 @@
 import { LightningElement, track } from 'lwc';
 import { NavigationMixin } from 'lightning/navigation';
+import Everymindassets from '@salesforce/resourceUrl/Everymindassets';
 
 export default class Login extends NavigationMixin(LightningElement) {
+
+  everymindlogo = `${Everymindassets}/EYassets/everymind.png`;
+  modelo = `${Everymindassets}/EYassets/modelo.png`;
+
   @track showRequiredMessage = true;
   @track showSuccessMessage = false;
 
