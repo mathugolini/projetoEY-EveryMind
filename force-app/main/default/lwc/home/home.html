@@ -1,93 +1,17 @@
 <template>
-    <div>
-        <div class="container">
-            <img src="https://www.seekpng.com/png/full/785-7858737_about-ey-ey-logo.png" alt="Logo da EY" class="ey-logo">
-            <div class="header">
-                <div class="login-signup">
-                    <ul>
-                        <li class="button login-button">Login</li>
-                        <li class="button signup-button">Sign Up</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-
-     <section class="BoxOne">
-        
-            <div class="promo-container">
-                
-                <h2 class="text-h2">Promovendo Inclusão e <br>transformando pela Educação</h2>
-                    
-                <button class="btn-start">COMECE AGORA</button>
-            </div>    
-        
-     </section>
-     
-    <div class="separator"></div>
-     
-    <img src="https://img.freepik.com/fotos-gratis/uma-vista-frontal-jovem-bonita-em-jeans-vermelho-camiseta-preta-segurando-diferentes-cadernos-e-arquivos-sorrindo-com-saco-no-branco_140725-18639.jpg?w=740&t=st=1692805616~exp=1692806216~hmac=b5b3c38c09c3bda5673d1e47ab7cbbcbf01887fda3c6d8a16740850b5f81e5c9" alt="modelo" class="modelo">
-     <section class="BoxTwo">
-        
-            <div class="ey-institute">
-                <h2 class="ey">EY INSTITUTE</h2>
-
-                <p>O EY Institute promove seis programas com conteúdos<br>multidisciplinares, em um formato que combina a experiência<br> presencial e virtual, com foco no aperfeiçoamento de<br> habilidades comportamentais.</p>
-            
-                <h4>Sobre nós</h4>
-                <p> Organização que impacta positivamente a sociedade por meio da capacitações de pessoas com deficiência e/ou em situação de vulnerabilidade social e econômica para o mercado de trabalho com o apoio de voluntários, doadores e organizações parceiras.</p>
-        
-                <h4>Propósito</h4>
-                <p> Promover a Inclusão e a Diversidade no mercado de trabalho<br/>através da Educação.</p>
-            </div>
-     </section>
-
-
-    <section class="BoxThree">
-            <div class="program">
-                <h3>Programas</h3>
-                <h3>EY Empodera </h3>
-                <p>Movimento que busca um universo de trabalho<br/>mais igualitário e inclusivo, contribuindo para a<br/>empregabilidade de pessoas com deficiência e<br/>em situação de vulnerabilidade social.</p>
-            
-            
-                <h3>Realize LAS</h3>
-                <p>Destinado a familiares de profissionais da EY que estão fora do mercado de trabalho</p>
-            
-           
-               <h3>CrescerEY</h3>
-               <p>Desenvolvimento de competências digitais. O programa tem como objetivo capacitar os instrutores da ONG ABCD Nossa Casa no uso das principais ferramentas de informática básica</p>
-            
-                <h3>Tech pra Elas</h3>
-                <p>Fortalecer conhecimentos em gestão e tecnologia de micro e pequenas empreendedoras em situação de vulnerabilidade social</p>
-            </div>
-    </section>
-
-
-    <section class="eligibility">
-           <h3>Verifique sua elegibilidade</h3>
-           <br/><br/>
-            <div class="input-field">
-                <label for="name">Nome Completo*</label>
-                <input type="text" id="name" placeholder="Nome">
-            </div>
-            <div class="input-field">
-                <label for="email">E-mail*</label>
-                <input type="email" id="email" placeholder="E-mail">
-            </div>
-            <div class="input-field">
-                <label for="phone">Telefone*</label>
-                <input type="tel" id="phone" placeholder="Telefone">
-            </div>
-            <div class="input-field">
-                <input type="checkbox" id="terms" />
-                <label for="terms">Declaro que li e aceito os Termos & Condições</label>
-            </div>
-            <button class="submit-button">ENVIAR</button>
-        </div>
-
-        <div class="footer">
-            2023 EY. All rights reserved.
-        </div>
-    </section>
-   
+    <div class="container">
+        <nav class="menu">
+            <input type="checkbox" name="menucircular" id="menucircular" class="menucircular" onchange={handleCheckboxChange}>
+            <label for="menucircular" class="menu-btn">
+                <span class="linha linha-1"></span>
+                <span class="linha linha-2"></span>
+                <span class="linha linha-3"></span>
+            </label>
+            <template for:each={menuItems} for:item="item">
+                <a key={item.id} href={item.link} class="menu-a" style={item.style}>
+                    <img src={item.icon} class="menu-icon">
+                </a>
+            </template>
+        </nav>
+    </div>
 </template>
