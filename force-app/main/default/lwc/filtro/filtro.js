@@ -34,7 +34,8 @@ export default class Filtro extends LightningElement {
         searchInput += this.template.querySelector('input[name="search"]').value + '\n';
         searchInput += "Responda apenas com o nome dos candidatos!"
 
-        const OPENAI_API_KEY = "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";
+        // remoção de chave API - segurança*** 
+        const OPENAI_API_KEY = "";
 
         const candidatos = {};
         candidatos["matheus"] = this.template.querySelector('div[class="candidato-1"]');
@@ -50,6 +51,7 @@ export default class Filtro extends LightningElement {
             method: "POST",
             headers: {
                 Accept: "application/json",
+
                 "Content-Type": "application/json",
                 Authorization: "Bearer " + OPENAI_API_KEY,
             },
