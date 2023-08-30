@@ -1,10 +1,12 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, track, wire } from 'lwc';
+import { NavigationMixin } from 'lightning/navigation'; // Certifique-se de importar corretamente
 import Everymindassets from '@salesforce/resourceUrl/Everymindassets';
-export default class Home extends LightningElement {
+
+export default class Home extends NavigationMixin(LightningElement) {
 
     everymindlogo = `${Everymindassets}/EYassets/everymind.png`;
     @track menuItems = [
-        { id: 'item1', link: '#', icon: `${Everymindassets}/EYassets/matheusLogo.png`, style: '' },
+        { id: 'item1', link: 'https://www.everymind.com.br/?utm_source=ISG&utm_medium=LandingPage%20&utm_id=Institucional%20', icon: `${Everymindassets}/EYassets/matheusLogo.png`, style: '' },
         { id: 'item2', link: '#', icon: 'icon2.png', style: '' },
         { id: 'item3', link: '#', icon: 'icon3.png', style: '' },
         { id: 'item4', link: '#', icon: 'icon4.png', style: '' },
@@ -34,4 +36,14 @@ export default class Home extends LightningElement {
             }
         });
     }
+
+    handleMenuItemClick() {
+        
+        const clickedItemId = event.target.dataset.itemId;
+        if (clickedItemId === 'item1') {
+            // Redirecionar para a página desejada na mesma janela
+            window.open("https://www.everymind.com.br/?utm_source=ISG&utm_medium=LandingPage%20&utm_id=Institucional%20","_blank");
+        } 
+    
+}
 }

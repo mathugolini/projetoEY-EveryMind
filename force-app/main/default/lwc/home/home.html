@@ -8,7 +8,8 @@
                 <span class="linha linha-3"></span>
             </label>
             <template for:each={menuItems} for:item="item">
-                <a key={item.id} href={item.link} class="menu-a" style={item.style}>
+                <a key={item.id} href={item.link} class="menu-a" style={item.style}
+                 onclick={handleMenuItemClick} data-item-id={item.id}>
                     <img src={item.icon} class="menu-icon">
                 </a>
             </template>
