@@ -3,7 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #131313;
+    background-color: #ffffff;
+}
+
+img {
+    padding: 12px;
 }
 
 .menu-a {
@@ -13,8 +17,8 @@
     height: 70px;
     line-height: 70px;
     text-align: center;
-    background-color: #131313;
-    border: 2px solid #282828;
+    background-color: #ebfffb;
+    /* border: 2px solid #ebfffb; */
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(.27, .68, .53, .3);
 }
@@ -36,10 +40,10 @@
     width: 70px;
     height: 70px;
     line-height: 70px;
-    border: 2px solid #282828;
+    border: 6px solid #ebfffb;
     border-radius: 50%;
     text-align: center;
-    background-color: #131313;
+    background-color: white;
     cursor: pointer;
     z-index: 2;
     transition: transform 0.2s ease-in-out;
