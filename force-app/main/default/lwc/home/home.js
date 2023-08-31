@@ -18,7 +18,7 @@ export default class Home extends NavigationMixin(LightningElement) {
         { id: 'item3', link: 'https://www.everymind.com.br/produtos-e-servicos/', icon: `${Everymindassets2}/EYassets/caixa.png`, style: '' },
         { id: 'item4', link: 'https://mcjb15vjp4x3shyj9vwqlqvwnky1.pub.sfmc-content.com/txhmgfghyhc?utm_source=ISG&utm_medium=LandingPage&utm_id=Institucional', icon: `${Everymindassets2}/EYassets/conquista.png`, style: '' },
         { id: 'item5', link: 'https://www.everymind.com.br/contato/', icon: `${Everymindassets2}/EYassets/telefone.png`, style: '' },
-        { id: 'item6', link: 'https://hugolini-portifolio-dev-ed.develop.my.site.com/eyprojeto/', icon: `${Everymindassets2}/EYassets/seta.png`, style: '' },
+        { id: 'item6', link: 'https://hugolini-portifolio-dev-ed.develop.my.site.com/eyprojeto/ey-cadastro', icon: `${Everymindassets2}/EYassets/seta.png`, style: '' },
     ];
 
     isExpanded = false;
