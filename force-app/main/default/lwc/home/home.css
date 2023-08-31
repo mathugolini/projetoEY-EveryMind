@@ -2,9 +2,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #ffffff;
 }
+
+.container2 {
+    display: flex;
+    margin-bottom: var(--size-40);
+    background-color: #ebfffb;
+    justify-content: left;
+    height: 90px;
+    }
 
 img {
     padding: 12px;
@@ -21,6 +29,10 @@ img {
     /* border: 2px solid #ebfffb; */
     border-radius: 50%;
     transition: transform 0.3s cubic-bezier(.27, .68, .53, .3);
+}
+
+.menu-a:hover {
+    transform: scale(2.2);
 }
 
 .menu-a.hidden {
@@ -50,7 +62,7 @@ img {
 }
 
 .menu-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     box-shadow: inset 1px 1px 2px #f0f, inset 1px -1px 2px #0340d0, inset -1px 1px 2px #efff0c, inset -1px -1px 2px #ff0000;
 }
 
