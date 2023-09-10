@@ -1,15 +1,15 @@
-# Projeto EY (Form para empresa EY) - LWC - FrontEnd
+# Projeto EY - EveryMind (Form para empresa EY - EveryMind) - LWC - FrontEnd
 
-:heavy_check_mark: Projeto EY
+:heavy_check_mark: Projeto EY - EveryMind
 
-Projeto FrontEnd EY - Telas de Login e Cadastro de usuário 
+Projeto LWC FrontEnd - Telas de HomePage, Login de usuário, Cadastro de usuário e Serviço de filtro de usuário
 
-:wrench: Construção do app em inglês 
+:wrench: Construção da aplicação em inglês 
 
-:art: Componentes HTML, CSS e JS 
+:art: Componentes HTML, CSS e JS  
 
-:arrow_down: projeto em construção
+:arrow_down: projeto em finalização
 
 	https://hugolini-portifolio-dev-ed.develop.my.site.com/eyprojeto
 
-Link navegavel entre tela Cadastro/ Login e Filtro
+Link navegavel entre tela Home -> Cadastro/ Login e Serviço de Filtro
